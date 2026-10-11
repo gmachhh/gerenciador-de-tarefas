@@ -1,0 +1,31 @@
+# Integração contínua: a cada push ou pull request, o GitHub compila o projeto e roda todos os testes
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        java: [17, 21, 25] # garante que o projeto funciona nas versões LTS do Java
+
+    name: Java ${{ matrix.java }}
+
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v7
+
+      - name: Instalar o Java ${{ matrix.java }}
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+          cache: maven
+
+      - name: Compilar e rodar os testes
+        run: ./mvnw -B verify
