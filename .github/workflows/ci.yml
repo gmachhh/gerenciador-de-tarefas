@@ -1,4 +1,4 @@
-# Integração contínua: a cada push ou pull request, o GitHub compila o projeto e roda todos os testes
+
 name: CI
 
 on:
@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        java: [17, 21, 25] # garante que o projeto funciona nas versões LTS do Java
+        java: [17, 21, 25] 
 
     name: Java ${{ matrix.java }}
 
