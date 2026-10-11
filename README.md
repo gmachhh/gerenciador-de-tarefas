@@ -1,5 +1,9 @@
 # Gerenciador de Tarefas
 
+[![CI](https://github.com/gmachhh/gerenciador-de-tarefas/actions/workflows/ci.yml/badge.svg)](https://github.com/gmachhh/gerenciador-de-tarefas/actions/workflows/ci.yml)
+![Java](https://img.shields.io/badge/Java-17%2B-orange)
+[![Licença: MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue)](LICENSE)
+
 Aplicação de linha de comando em **Java** para organizar tarefas do dia a dia, com prioridades, prazos, filtros, estatísticas e salvamento automático em arquivo.
 
 Projeto desenvolvido para praticar **Programação Orientada a Objetos**, **arquitetura em camadas**, **testes automatizados** e recursos modernos do Java (Streams, Records, `switch` expressions, `java.time` e `java.nio`).
