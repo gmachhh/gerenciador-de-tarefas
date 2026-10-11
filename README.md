@@ -112,3 +112,7 @@ Ou abra a pasta no VS Code (com o *Extension Pack for Java*) ou no IntelliJ e ex
 - [x] Build com Maven
 - [ ] Interface gráfica (JavaFX) ou API REST (Spring Boot)
 - [ ] Persistência em banco de dados (SQLite / PostgreSQL)
+
+## Licença
+
+Distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE).
