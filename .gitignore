@@ -1,0 +1,13 @@
+# Arquivos compilados
+target/
+bin/
+*.class
+
+# Dados locais do usuário
+tarefas.csv
+tarefas.csv.tmp
+
+# IDE
+.idea/
+*.iml
+.vscode/
